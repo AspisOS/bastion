@@ -282,7 +282,7 @@ draw_form(void)
     if (s_logo_pixels) {
         draw_logo(cx, logo_y);
     } else {
-        draw_text_simple(cx - 7 * 8 / 2, logo_y, "ASPISOS", 0x00FFFFFF);
+        draw_text_simple(cx - 7 * 8 / 2, logo_y, "LORICAOS", 0x00FFFFFF);
     }
 
     /* v1 disclaimer below logo — matches aegissite terminology */

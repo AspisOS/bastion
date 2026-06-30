@@ -1,14 +1,14 @@
 # bastion
 
-The display manager and login greeter for **AspisOS**, a capability-based,
+The display manager and login greeter for **LoricaOS**, a capability-based,
 no-ambient-authority operating system built on the from-scratch
-[Aegis](https://github.com/AspisOS/Aegis) kernel.
+[Aegis](https://github.com/LoricaOS/Aegis) kernel.
 
 bastion is the first graphical thing a user sees: on a graphical boot it draws
 the greeter, authenticates the user against the system credential store, and
-launches their session into the [lumen](https://github.com/AspisOS/lumen)
+launches their session into the [lumen](https://github.com/LoricaOS/lumen)
 compositor. It is a standalone component of the Lumen desktop, distributed as a
-[herald](https://github.com/AspisOS/AspisOS) package.
+[herald](https://github.com/LoricaOS/LoricaOS) package.
 
 ## Role in the system
 
@@ -41,7 +41,7 @@ package: first-party and signature-trusted, installed verbatim by herald.
 
 ## Building
 
-bastion fetches a pinned [glyph](https://github.com/AspisOS/glyph) toolkit
+bastion fetches a pinned [glyph](https://github.com/LoricaOS/glyph) toolkit
 artifact (the GUI libraries it links: glyph + libaudio + libauth) and builds
 against it, then packs a signed herald package.
 
@@ -78,5 +78,5 @@ GLYPH_VERSION   the pinned glyph toolkit version it builds against
 ## Dependencies
 
 `depends=lumen` — bastion launches sessions into the compositor, so installing
-it pulls [lumen](https://github.com/AspisOS/lumen) (which in turn provides the
+it pulls [lumen](https://github.com/LoricaOS/lumen) (which in turn provides the
 desktop fonts).
